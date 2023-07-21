@@ -2,13 +2,14 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
+A Gift for Charlie/[Ll]ibrary/
+A Gift for Charlie/[Tt]emp/
+A Gift for Charlie/[Oo]bj/
+A Gift for Charlie/[Bb]uild/
+A Gift for Charlie/[Bb]uilds/
+A Gift for Charlie/[Ll]ogs/
+A Gift for Charlie/[Uu]ser[Ss]ettings/
+A Gift for Charlie/.idea/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
