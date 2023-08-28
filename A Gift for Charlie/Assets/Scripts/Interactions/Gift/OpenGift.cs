@@ -1,4 +1,6 @@
 /*
+ * Set this script to gift box
+ * 
  * Play the box opening animation when:
  *  1. the player is near the gift box
  *      &
@@ -14,18 +16,33 @@ public class OpenGift : MonoBehaviour
     public PlayerNearGift near;
     public int clickOnce = 0;
 
+    [Header("Animation")]
+    public Animator setAnim;
+    
+    public void Start()
+    {
+        setAnim = GetComponent<Animator>();
+    }
+
     void Update()
     {
         if (near == true && Input.GetKeyDown(KeyCode.E) && clickOnce < 1)
         {
-            OpenGiftAnim();
             clickOnce++;
+            OpenGiftAnim();
         }
     }
 
     public void OpenGiftAnim()
     {
-        //animation
-        Debug.Log("Animation of box moving!!");
+        if (clickOnce == 1)
+        {
+            setAnim.SetBool("OpenGift", true);
+            Debug.Log("Animation of box moving!!");
+        }
+        else
+        {
+            setAnim.SetBool("OpenGift", false);
+        }
     }
 }
