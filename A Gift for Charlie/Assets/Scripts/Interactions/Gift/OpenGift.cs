@@ -35,14 +35,6 @@ public class OpenGift : MonoBehaviour
 
     public void OpenGiftAnim()
     {
-        if (clickOnce == 1)
-        {
-            setAnim.SetBool("OpenGift", true);
-            Debug.Log("Animation of box moving!!");
-        }
-        else
-        {
-            setAnim.SetBool("OpenGift", false);
-        }
+        setAnim.SetBool("OpenGift", true);
     }
 }

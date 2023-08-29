@@ -38,6 +38,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: OpenGift
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: Rotate_Gift
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 20151553912570297}
   m_Solo: 0
@@ -63,16 +66,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 20151553912570297}
-    m_Position: {x: -190, y: 180, z: 0}
+    m_Position: {x: -210, y: 180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2404966312709201532}
-    m_Position: {x: 310, y: 90, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 6932986448725474849}
-    m_Position: {x: 310, y: 140, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 370539045683028268}
-    m_Position: {x: 310, y: 190, z: 0}
+    m_Position: {x: -210, y: 260, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2504292022264821578}
     m_Position: {x: 30, y: 180, z: 0}
@@ -96,6 +93,12 @@ AnimatorController:
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: OpenGift
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: Rotate_Gift
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -140,32 +143,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &370539045683028268
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Rotate_Gift_Front_Ribbon
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 77bc181e4a136b1418936fa8d846ba24, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1102 &2404966312709201532
 AnimatorState:
   serializedVersion: 6
@@ -187,32 +164,6 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: e52ae439db5c9604796e719911931ddb, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &6932986448725474849
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Rotate_Gift_Ribbons
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 293f81aead96c8e49ae1ca9ca783549e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
